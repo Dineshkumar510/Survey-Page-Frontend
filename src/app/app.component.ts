@@ -18,7 +18,7 @@ export class AppComponent implements OnInit  {
   ngOnInit(): void {
     
     var header = document.getElementsByClassName("chart-scale");
-    var btns = Array.from(header.getElementsByClassName("btn-scale") as HTMLCollectionOf<HTMLElement>)
+    var btns = document.getElementsByClassName("btn-scale") as HTMLCollectionOf<HTMLElement>
     for (var i = 0; i<btns.length; i++){
       btns[i].addEventListener('click', function() {
         var current = document.getElementsByClassName("active");
@@ -32,4 +32,5 @@ export class AppComponent implements OnInit  {
   showSuccess() {
     this.toastr.success('Your Feedback submitted successfully 🤗');
   }
+
 }
