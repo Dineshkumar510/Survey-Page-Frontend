@@ -9,6 +9,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class AppComponent implements OnInit  {
   title = 'feedback';
+  className: string | undefined;
 
   constructor(public toastService: ToastService,
     private toastr: ToastrService,
@@ -18,9 +19,9 @@ export class AppComponent implements OnInit  {
   ngOnInit(): void {
     
     var header = document.getElementsByClassName("chart-scale");
-    var btns = document.getElementsByClassName("btn-scale") as HTMLCollectionOf<HTMLElement>
+    var btns = document.getElementsByClassName("btn-scale");
     for (var i = 0; i<btns.length; i++){
-      btns[i].addEventListener('click', function() {
+      btns[i].addEventListener('click', () => {
         var current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace("active", "");
         this.className += "active";
