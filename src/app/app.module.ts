@@ -11,11 +11,16 @@ import { PopoverModule } from 'ngx-bootstrap/popover';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { ToastrModule } from 'ngx-toastr';
+import { FormsModule } from '@angular/forms'; 
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    MatProgressBarModule,
+    FormsModule,
     CommonModule,
     BrowserModule,
     AppRoutingModule,

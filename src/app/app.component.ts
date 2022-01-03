@@ -34,4 +34,7 @@ export class AppComponent implements OnInit  {
     this.toastr.success('Your Feedback submitted successfully 🤗');
   }
 
+
+  
+
 }
