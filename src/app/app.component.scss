@@ -1,10 +1,12 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&display=swap');
 
 body {
-    max-width: 896px;
+    max-width: 1200px;
     margin: auto;
     border: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ol, li {
@@ -13,6 +15,16 @@ ol, li {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
+
+input[type="radio"], input[type="checkbox"]{
+    background-color: #E9F3F0;
+}
+
+label{
+    font-weight: 500;
+}
+
 
 textarea:hover, 
 input:hover, 
@@ -32,21 +44,26 @@ label:focus,
     box-shadow: none !important;
 }
 
+.options{
+    margin: 10px 0;
+}
+
 .main{
     padding: 40px 80px 0 120px;
     margin: 64px 0 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 19.5px;
 }
 
 .content-title{
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
     word-wrap: break-word;
     white-space: normal;
     display: block;
-    color: #00bf6f;
+    color: #29b379;
     margin: 0px 0px 50px 0;
 }
 
@@ -62,7 +79,7 @@ label:focus,
 
 .survey-page .question-body{
     color: #333e48;
-    font-family: National2;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -77,15 +94,15 @@ label:focus,
     text-align: center;
     font-weight: bold;
     color: black;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     border: 1px solid #00bf6f;
+    background-color: #E9F3F0;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
-    -o-border-radius: 0;
-    background-color: #f5f5f5;
+    -o-border-radius: 0;    
     font-size: 12px;
     margin-right: 0;
 }
@@ -108,7 +125,7 @@ label:focus,
   
 .form-check{
     color: #333e48;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -126,7 +143,7 @@ label:focus,
  
 
 .options{
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 100%;
 }
@@ -139,7 +156,7 @@ label:focus,
 
 textarea.textarea {
     padding-right: 60px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -151,17 +168,14 @@ textarea.textarea {
     resize: both;
 }
 
-@media only screen and (max-width: 1024px){
-    input.text, textarea.textarea {
-        font-size: 16px !important;
-    }
-}
+
 textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-    border: 1px solid #333e48;;
+    border: 1px solid #333e48;
+    background-color: #E9F3F0;
     border-radius: 5%;
     -webkit-border-radius: 5%;
     -moz-border-radius: 5%;
@@ -193,7 +207,7 @@ textarea.textarea {
 .survey-page-button{
     background-color: #00bf6f;
     color: #fff;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     float: none !important;
     border: 1px solid transparent;
@@ -221,3 +235,41 @@ textarea.textarea {
     border: 2px solid #00bf6f;
 }
 
+
+.answer-option-col{
+    float: left;
+   
+}
+
+.answer-option-col-2{
+    width: 50%;
+}
+
+
+form{
+    display: block;
+    width: 100%;
+}
+
+
+@media all and (max-width: 700px){
+    .answer-option-col{
+        float: none;
+    }
+}
+
+@media all and (max-width: 700px){
+    .answer-option-col-2{
+        width: auto;
+    }
+}
+
+@media all and (max-width: 700px){
+    .main{
+        padding: 10px;
+        margin: 10px 0 0;
+    }
+    form{
+        display:inline-block;
+    }
+}
