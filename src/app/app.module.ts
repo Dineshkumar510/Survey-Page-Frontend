@@ -13,10 +13,12 @@ import { CommonModule } from '@angular/common';
 import { ToastrModule } from 'ngx-toastr';
 import { FormsModule } from '@angular/forms'; 
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { ScrollProgressBarComponent } from './scroll-progress-bar/scroll-progress-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScrollProgressBarComponent,
   ],
   imports: [
     MatProgressBarModule,

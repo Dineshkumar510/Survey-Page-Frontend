@@ -1,9 +1,14 @@
+<div class="header progress-container">
+	<app-scroll-progress-bar (progressValue)="getProgressValue($event)"></app-scroll-progress-bar>
+  <div class="progress-bar" id="myBar"></div>
+</div>
+
 
 
 <div class="main">
       <div class="container">
         <div class="row">
-          <div  data-aos="fade-down" class="col-md-12">
+          <div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-md-12">
 
             <div class="content-title">
                 Customer satisfaction Survey form

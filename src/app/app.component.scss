@@ -8,7 +8,6 @@ body {
     border: none;
     font-family: 'Montserrat', sans-serif;
 }
-
   
 
 ol, li {
@@ -252,6 +251,38 @@ form{
     display: block;
     width: 100%;
 }
+
+
+p {
+    font-family: Lato;
+  }
+  
+  .header{
+    width: 100%;
+    position: sticky;
+    top:0;
+    z-index: 2;
+  }
+  
+  .toolbar-spacer{
+     flex: 1 1 auto;
+  }
+    
+
+ /* .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+  }
+
+  */
+
 
 
 @media all and (max-width: 700px){
