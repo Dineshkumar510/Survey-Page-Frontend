@@ -3,6 +3,7 @@ import {
   OnInit,
   Output,
   EventEmitter,
+  ViewEncapsulation,
 } from "@angular/core";
 import { fromEvent} from "rxjs";
 import { map, tap } from "rxjs/operators";
@@ -10,7 +11,8 @@ import { map, tap } from "rxjs/operators";
 @Component({
   selector: "app-scroll-progress-bar",
   templateUrl: "./scroll-progress-bar.component.html",
-  styleUrls: ["./scroll-progress-bar.component.css"]
+  styleUrls: ["./scroll-progress-bar.component.css"],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ScrollProgressBarComponent implements OnInit {
   @Output() progressValue = new EventEmitter();

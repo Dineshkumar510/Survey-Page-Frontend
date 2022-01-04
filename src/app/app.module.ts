@@ -14,11 +14,13 @@ import { ToastrModule } from 'ngx-toastr';
 import { FormsModule } from '@angular/forms'; 
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ScrollProgressBarComponent } from './scroll-progress-bar/scroll-progress-bar.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScrollProgressBarComponent,
+    ScrollToTopComponent,
   ],
   imports: [
     MatProgressBarModule,

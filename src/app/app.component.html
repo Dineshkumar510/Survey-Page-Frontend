@@ -1,9 +1,9 @@
+
 <div class="header progress-container">
-	<app-scroll-progress-bar (progressValue)="getProgressValue($event)"></app-scroll-progress-bar>
-  <div class="progress-bar" id="myBar"></div>
+	<app-scroll-progress-bar (progressValue)="getProgressValue($event)"></app-scroll-progress-bar>  
 </div>
 
-
+<app-scroll-to-top></app-scroll-to-top>
 
 <div class="main">
       <div class="container">
@@ -60,7 +60,8 @@
                           </div>
 
                           <div class="qt2">
-                            <div class="q2 qtn mt">
+                            
+                            <div class="q2 qtn mts">
 
                                 <ol start="2">
                                   <li>Overall, how satisfied or dissatisfied are you with our company?</li>
@@ -68,28 +69,44 @@
 
                             </div>
 
-                            <form>
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="Very Satisfied" name="gender" />
-                                <label class="form-check-label" for="Very Satisfied">Very Satisfied</label>
-                              </div>
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="Somewhat satisfied" name="gender" />
-                                <label class="form-check-label" for="Somewhat satisfied">Somewhat satisfied</label>
-                              </div>
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="Neither satisfied nor dissatisfied" name="gender" />
-                                <label class="form-check-label" for="Neither satisfied nor dissatisfied">Neither satisfied nor dissatisfied</label>
-                              </div>
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="Somewhat dissatisfied" name="gender" />
-                                <label class="form-check-label" for="Somewhat dissatisfied">Somewhat dissatisfied</label>
-                              </div>
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="Very dissatisfied" name="gender" />
-                                <label class="form-check-label" for="Very dissatisfied">Very dissatisfied</label>
-                              </div>
-                            </form>
+                            <div class="options">
+
+                                <div class="answer-option-col answer-option-col-2">
+
+                                  <form>
+                                    <div class="form-check">
+                                      <input type="radio" class="form-check-input" id="Very Satisfied" name="gender" />
+                                      <label class="form-check-label" for="Very Satisfied">Very Satisfied</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" class="form-check-input" id="Somewhat satisfied" name="gender" />
+                                      <label class="form-check-label" for="Somewhat satisfied">Somewhat satisfied</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" class="form-check-input" id="Neither satisfied nor dissatisfied" name="gender" />
+                                      <label class="form-check-label" for="Neither satisfied nor dissatisfied">Neither satisfied nor dissatisfied</label>
+                                    </div>
+                                  </form>
+
+                                </div>
+
+                                <div class="answer-option-col answer-option-col-2">
+
+                                <form>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Somewhat dissatisfied" name="gender" />
+                                    <label class="form-check-label" for="Somewhat dissatisfied">Somewhat dissatisfied</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Very dissatisfied" name="gender" />
+                                    <label class="form-check-label" for="Very dissatisfied">Very dissatisfied</label>
+                                  </div>
+                                </form>
+
+                                </div>
+
+                            </div>
+                             
 
                           </div>
 
@@ -165,37 +182,57 @@
 
 
                         <div class="qt4">
+
                             <div class="q4 qtn mt">
 
-                              <ol start="4">
-                                <li>How well do our products meet your needs?</li>
-                              </ol>
+                                <ol start="4">
+                                  <li>How well do our products meet your needs and necessaries?</li>
+                                </ol>
 
                             </div>
 
-                            <form>
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="Extremely well" name="gender" />
-                                <label class="form-check-label" for="Extremely well">Extremely well</label>
-                              </div>
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="Very well" name="gender" />
-                                <label class="form-check-label" for="Very well">Very well</label>
-                              </div>
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="Somewhat well" name="gender" />
-                                <label class="form-check-label" for="Somewhat well">Somewhat well</label>
-                              </div>
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="Not so well" name="gender" />
-                                <label class="form-check-label" for="Not so well">Not so well</label>
-                              </div>
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="Not at all well" name="gender" />
-                                <label class="form-check-label" for="Not at all well">Not at all well</label>
-                              </div>
-                            </form>
+                            
+                            <div class="options">
 
+                                <div class="answer-option-col answer-option-col-2">
+
+                                  <form>
+                                      <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="Extremely well" name="gender" />
+                                        <label class="form-check-label" for="Extremely well">Extremely well</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="Very well" name="gender" />
+                                        <label class="form-check-label" for="Very well">Very well</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="Somewhat well" name="gender" />
+                                        <label class="form-check-label" for="Somewhat well">Somewhat well</label>
+                                      </div>
+                                  </form>
+
+                                </div>
+
+
+                                <div class="answer-option-col answer-option-col-2">
+
+                                <form>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Not so well" name="gender" />
+                                    <label class="form-check-label" for="Not so well">Not so well</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Not at all well" name="gender" />
+                                    <label class="form-check-label" for="Not at all well">Not at all well</label>
+                                  </div>
+                                </form>
+    
+
+                                </div>
+
+                            </div>
+
+                              
                         </div>
 
 
@@ -203,33 +240,52 @@
                           <div class="q5 qtn mt">
 
                             <ol start="5">
-                              <li>How would you rate the quality of the product?</li>
+                              <li>How would you rate the product, when it comes to quality?</li>
                             </ol>
 
                           </div>
 
-                          <form>
-                            <div class="form-check">
-                              <input type="radio" class="form-check-input" id="Very high quality" name="gender" />
-                              <label class="form-check-label" for="Very high quality">Very high quality </label>
-                            </div>
-                            <div class="form-check">
-                              <input type="radio" class="form-check-input" id="High quality" name="gender" />
-                              <label class="form-check-label" for="High quality">High quality</label>
-                            </div>
-                            <div class="form-check">
-                              <input type="radio" class="form-check-input" id="Neither high nor low quality" name="gender" />
-                              <label class="form-check-label" for="Neither high nor low quality">Neither high nor low quality</label>
-                            </div>
-                            <div class="form-check">
-                              <input type="radio" class="form-check-input" id="Low quality" name="gender" />
-                              <label class="form-check-label" for="Low quality">Low quality</label>
-                            </div>
-                            <div class="form-check">
-                              <input type="radio" class="form-check-input" id="Very low quality" name="gender" />
-                              <label class="form-check-label" for="Very low quality">Very low quality</label>
-                            </div>
-                          </form>
+
+                          <div class="options">
+
+                              <div class="answer-option-col answer-option-col-2">
+
+                                <form>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Very high quality" name="gender" />
+                                    <label class="form-check-label" for="Very high quality">Very high quality </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="High quality" name="gender" />
+                                    <label class="form-check-label" for="High quality">High quality</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Neither high nor low quality" name="gender" />
+                                    <label class="form-check-label" for="Neither high nor low quality">Neither high nor low quality</label>
+                                  </div>
+                                </form>
+
+                              </div>
+
+
+                              <div class="answer-option-col answer-option-col-2">
+
+                              <form>
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" id="Low quality" name="gender" />
+                                  <label class="form-check-label" for="Low quality">Low quality</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" id="Very low quality" name="gender" />
+                                  <label class="form-check-label" for="Very low quality">Very low quality</label>
+                                </div>
+                              </form>
+
+                              </div>
+
+                          </div>
+                         
+                            
 
                       </div>
 

@@ -25,12 +25,12 @@ export class AppComponent implements OnInit  {
     ) 
   {}
 
-  ngOnInit(): void {
-    
 
-    window.onscroll = () => {
-      this.myFunction();
-    }
+  ngOnInit(): void {
+
+
+    
+  
 
     
     var header = document.getElementsByClassName("chart-scale");
@@ -45,13 +45,7 @@ export class AppComponent implements OnInit  {
 
   }
 
-  myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar")!.style.width = scrolled + "%";
-  }
-
+  
 
   showSuccess() {
     this.toastr.success('Your Feedback submitted successfully 🤗');
@@ -62,5 +56,7 @@ export class AppComponent implements OnInit  {
     this.progressValue = v;
   }
 
+  
+  
  
 }
