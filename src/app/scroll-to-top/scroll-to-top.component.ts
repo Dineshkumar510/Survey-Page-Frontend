@@ -19,6 +19,8 @@ export class ScrollToTopComponent implements OnInit {
           this.windowScrolled = false;
       }
   }
+
+
   scrollToTop() {
       (function smoothscroll() {
           var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -30,7 +32,22 @@ export class ScrollToTopComponent implements OnInit {
   }
 
 
+
   ngOnInit(): void {
+
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    var rootElement = document.documentElement;
+
+    function scrollToTop() {
+    // Scroll to top logic
+    rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    }
+    scrollToTopBtn!.addEventListener("click", scrollToTop);
+
   }
+  
 
 }

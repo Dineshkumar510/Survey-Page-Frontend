@@ -2,6 +2,227 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&display=swap');
 
+
+
+
+$grey1: #FFFFFF;
+$grey2: #f5f5f5;
+$grey3: #E9E9E9;
+$grey4: #D7D8D7;
+$grey5: #C3C3C3;
+$grey6: #ACACAC;
+$grey7: #949494;
+$grey8: #7C7C7C;
+$grey9: #666565;
+$grey10: #505051;
+$grey11: #3F3F40;
+$grey12: #333333;
+
+
+$green1: #E8FFF0;
+$green2: #BEF1CF;
+$green3: #91DEAC;
+$green4: #74D897;
+$green5: #5BCA82;
+$green6: #44BB6E;
+$green7: #38AF61;
+$green8: #259F4E;
+$green9: #0D963C;
+
+
+
+input[type="radio"], input[type="checkbox"] {
+  display: none;  
+  & + label {
+    position: relative;
+    display: inline-block;
+    padding-left: 24px;
+    margin-right: 32px;
+    cursor: pointer;
+    line-height: 16px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 10px;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+
+      top: -1px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      text-align: center;
+      color: #E9F3F0;
+      font-family: Times;
+      border-radius: 50%;
+      transition: all .3s ease;
+    }
+  }
+}
+input[type="radio"] + label {
+  &:before {    
+    box-shadow:
+      inset 0 0 0 1px $grey9,
+      inset 0 0 0 16px $grey1,
+      inset 0 0 0 16px $green6;
+  }
+  &:hover{
+    color: $green6;
+  }
+  &:hover:before {
+    //transition: all .3s ease;
+    animation-duration: .5s;
+    animation-name: change-size;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow:
+      inset 0 0 0 1px $green6,
+      inset 0 0 0 16px $grey1,
+      inset 0 0 0 16px $green6;
+  }
+}
+input[type="radio"]:checked + label {
+  &:hover{
+    color: $grey12;
+    cursor: default;
+  }
+  &:before {
+    //transition: all .3s ease;
+    animation-duration: .2s;
+    animation-name: select-radio;
+    animation-iteration-count: 1;
+    animation-direction: Normal;
+    box-shadow:
+      inset 0 0 0 1px $green6,
+      inset 0 0 0 3px $grey1,
+      inset 0 0 0 16px $green6;
+  }
+
+}
+
+@keyframes change-size{
+  from {
+    box-shadow: 0 0 0 0 $green6,
+      inset 0 0 0 1px $green6,
+      inset 0 0 0 16px $grey1,
+      inset 0 0 0 16px $green6;      
+  }
+
+  to {
+    box-shadow: 0 0 0 1px $green6,
+      inset 0 0 0 1px $green6,
+      inset 0 0 0 16px $grey1,
+      inset 0 0 0 16px $green6;
+  }
+}
+
+
+@keyframes select-radio{
+  0% {
+    box-shadow:
+      0 0 0 0 $green3,
+      inset 0 0 0 2px $grey1,
+      inset 0 0 0 3px $green6,
+      inset 0 0 0 16px $grey1,
+      inset 0 0 0 16px $green6;   
+  }
+
+  90% {
+    box-shadow:
+      0 0 0 10px $green1,
+       inset 0 0 0 0 $grey1,
+      inset 0 0 0 1px $green6,
+      inset 0 0 0 2px $grey1,
+      inset 0 0 0 16px $green6;
+  }
+  
+  100% {
+    box-shadow:
+      0 0 0 12px $green1,
+      inset 0 0 0 0 $grey1,
+      inset 0 0 0 1px $green6,
+      inset 0 0 0 3px $grey1,
+      inset 0 0 0 16px $green6;
+  }
+}
+
+@keyframes select-checkbox{
+  0% {
+    box-shadow:
+      0 0 0 0 $green3,
+      inset 0 0 0 2px $grey1,
+      inset 0 0 0 3px $green6,
+      inset 0 0 0 16px $grey1,
+      inset 0 0 0 16px $green6;   
+  }
+
+  90% {
+    box-shadow:
+      0 0 0 10px $green1,
+       inset 0 0 0 0 $grey1,
+      inset 0 0 0 1px $green6,
+      inset 0 0 0 0 $grey1,
+      inset 0 0 0 16px $green6;
+  }
+  
+  100% {
+    box-shadow:
+      0 0 0 12px $green1,
+      inset 0 0 0 0 $grey1,
+      inset 0 0 0 1px $green6,
+      inset 0 0 0 0 $grey1,
+      inset 0 0 0 16px $green6;
+  }
+}
+
+input[type="checkbox"] + label {
+  &:hover{
+    color: $green6;
+  }
+  &:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00c';
+    line-height: 17px;
+    border-radius: 0;
+    background-color: $grey1;
+    color: $grey1;
+    box-shadow:
+      inset 0 0 0 1px $grey9,
+      inset 0 0 0 16px $grey1,
+      inset 0 0 0 16px $green6;
+  }
+  &:hover:before {
+    color: $grey1;
+    animation-duration: .5s;
+    animation-name: change-size;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow:
+      inset 0 0 0 1px $green6,
+      inset 0 0 0 16px $grey1,
+      inset 0 0 0 16px $green6;
+  }
+}
+input[type="checkbox"]:checked + label {
+  &:before {
+    background-color: $grey5;
+    color: $grey1;
+    animation-duration: .2s;
+    animation-name: select-checkbox;
+    animation-iteration-count: 1;
+    animation-direction: Normal;
+    box-shadow:
+      inset 0 0 0 1px $green6,
+      inset 0 0 0 0 $grey1,
+      inset 0 0 0 16px $green6;
+  }
+}
+
+
+
+
 body {
     margin: auto;
     border: none;
@@ -17,10 +238,6 @@ ol, li {
     font-weight: 900;
   }
 
-
-input[type="radio"], input[type="checkbox"]{
-    background-color: #E9F3F0;
-}
 
 label{
     font-weight: 600;
@@ -64,13 +281,13 @@ label:focus,
 .content-title{
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 35px;
+    font-weight: 800;
     word-wrap: break-word;
     white-space: normal;
     display: block;
     color: #29b379;
-    margin: 0px 0px 50px 0;
+    margin: 0px 0px 120px 0;
 }
 
 
@@ -107,7 +324,7 @@ label:focus,
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     border: 1px solid #00bf6f;
-    background-color: #E9F3F0;
+    background-color: $grey2;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -186,7 +403,7 @@ textarea {
     box-sizing: border-box;
     width: 100%;
     border: 1px solid #333e48;
-    background-color: #E9F3F0;
+    background-color: $grey2;
     border-radius: 5%;
     -webkit-border-radius: 5%;
     -moz-border-radius: 5%;
@@ -195,9 +412,6 @@ textarea {
     transition: transform 250ms;
 }
 
-textarea:hover {
-    border: 2px solid #00bf6f;
-}
 
 textarea:focus{
     border: 2px solid #00bf6f;
@@ -205,7 +419,7 @@ textarea:focus{
 
 textarea.textarea {
     max-width: 100%;
-    background: #FFF;
+    background-color: $grey2;
     box-sizing: border-box;
     padding: 6px 60px 6px 6px;
     -webkit-transition: all 0.1s linear;
@@ -253,7 +467,7 @@ textarea.textarea {
 }
 
 .answer-option-col-2{
-    width: 45%;
+    width: 42%;
 }
 
 
@@ -278,22 +492,6 @@ p {
      flex: 1 1 auto;
   }
     
-
- /* .progress-container {
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-  }
-  
-  .progress-bar {
-    height: 8px;
-    background: #04AA6D;
-    width: 0%;
-  }
-
-  */
-
-
   .header {
     position: fixed;
     top: 0;
