@@ -13,6 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 export class AppComponent implements OnInit  {
   @ViewChild("toTopBtn") private toTopBtn: any;
 
+  box: any;
   name = "Angular";
   progressValue = 0;
   isShow:boolean = true;
@@ -28,20 +29,19 @@ export class AppComponent implements OnInit  {
 
   ngOnInit(): void {
 
-
-    
   
-
-    
-    var header = document.getElementsByClassName("chart-scale");
-    var btns = document.getElementsByClassName("btn-scale");
+    var header = document.getElementById("chart")!;
+    var btns = header.getElementsByClassName("btn");
     for (var i = 0; i<btns.length; i++){
       btns[i].addEventListener('click', () => {
         var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace("active", "");
-        this.className += "active";
+        if (current.length > 0){
+          current[0].className = current[0].className.replace("active", "");
+        }
+        this.className += " active";
       });
     }
+
 
   }
 

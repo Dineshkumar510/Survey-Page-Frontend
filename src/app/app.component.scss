@@ -442,7 +442,6 @@ textarea.textarea {
     padding: 15px 25px;
     width: 293px;
     height: 54px;
-    font-size: 16px;
     transition: transform 250ms;
 }
 
@@ -516,7 +515,282 @@ p {
     width: 0%;
   }
 
-  
+
+
+
+  /*footer*/
+
+  #footer {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #bdc3c7;
+}
+
+.midnight-blue, #pricing-table .plan.featured {
+  background-color: #312f2f;
+}
+
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row > div {
+  margin-bottom: 10px;
+}
+
+.col-sm-6{
+  position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+#footer a {
+  color: #fff;
+}
+
+
+#footer ul, ul.gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+
+.btn-social {
+  border: 0;
+  color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0;
+  margin: 0 2px;
+}
+
+
+.btn {
+  font-weight: 400;
+}
+
+.btn-social.btn-facebook {
+  background: #4f7dd4;
+}
+
+.btn-social.btn-twitter {
+  background: #5bceff;
+}
+
+.btn-social.btn-linkedin {
+  background: #21a6d8;
+}
+
+.btn-social.btn-youtube {
+  background: #c4302b;
+}
+
+.insta {
+  background-color: #e1306cc4;
+}
+
+.bright-talk {
+  background-color: #66cc00;
+}
+
+
+.talk-logo {
+  margin-bottom: 9%;
+  height: 14px;
+}
+
+.company-name {
+  margin-top: 10px;
+  padding: 0;
+  margin: 0 !important;
+  width: 50% !important;
+}
+
+.social-media {
+  padding: 0;
+  margin: 0 !important;
+  width: 50% !important;
+}
+
+.row > div {
+  margin : 20px 0;
+}
+
+#bottom, #footer a {
+  color: #fff;
+}
+
+.stickyHeader, .wet-asphalt {
+  background-color: #292626;
+}
+
+section {
+  padding-top: 0px;
+  padding-bottom: 0;
+  display: block;
+}
+
+.wet-asphalt h4{
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 18px;
+}
+
+.noMargin {
+  margin: 0px !important;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid #eeeeee;
+}
+
+.wet-asphalt a:not(.btn), #bottom, #footer a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.greyText {
+  color: #898686 !important;
+}
+
+
+ul.arrow{
+  list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.arrow li::before {
+  content:'\f105';
+  font-family: FontAwesome;
+  font-size: 11px;
+  margin-right: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li a {
+  text-decoration: none !important;
+  background-color: transparent;
+  font-weight: 400;
+}
+
+
+.media:first-child {
+  margin-top: 0;
+}
+
+.media, .media-body {
+  zoom: 1;
+  overflow: hidden;
+}
+
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+}
+
+
+.media-heading {
+  display: block;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+small, .small {
+  font-size: 6px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px){
+.container {
+    width: 100%;
+}
+}
+
+@media (min-width: 1200px){
+.container {
+    max-width: 1170px;
+}
+}
+
+@media (min-width: 992px){
+.col-md-4 {
+    width: 33.33333333% !important;
+    float: left;
+}
+}
+
+@media (min-width: 992px){
+.col-md-2 {
+    width: 16.66666667% !important;
+    float: left;
+}
+}
+
+@media (min-width: 992px){
+.col-md-3 {
+    width: 25% !important;
+}
+}
+
+@media (min-width: 768px){
+.col-sm-5 {
+    width: 41.66666667% !important;
+}
+.col-sm-3 {
+  width: 41.66666667% !important;
+}
+}
+
+@media all and (max-width: 700px){
+  .social-media{
+    width: 100% !important;
+  }
+  .company-name{
+    width: 100% !important;
+  }
+}
 
 
 
