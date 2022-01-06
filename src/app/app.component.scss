@@ -1,6 +1,10 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
 
 
@@ -28,6 +32,7 @@ $green6: #44BB6E;
 $green7: #38AF61;
 $green8: #259F4E;
 $green9: #0D963C;
+$green10: #00bf6f;
 
 
 
@@ -226,7 +231,7 @@ input[type="checkbox"]:checked + label {
 body {
     margin: auto;
     border: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
  
 
@@ -274,12 +279,12 @@ label:focus,
 .main{
     padding: 40px 80px 0 120px;
     margin: 64px 0 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-top: 19.5px;
 }
 
 .content-title{
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
     text-align: left;
     font-size: 35px;
     font-weight: 800;
@@ -306,7 +311,7 @@ label:focus,
 
 .survey-page .question-body{
     color: #333e48;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -321,7 +326,7 @@ label:focus,
     text-align: center;
     font-weight: bold;
     color: black;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     border: 1px solid #00bf6f;
     background-color: $grey2;
@@ -352,7 +357,7 @@ label:focus,
   
 .form-check{
     color: #333e48;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -384,7 +389,7 @@ label:focus,
 
 textarea.textarea {
     padding-right: 60px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -432,7 +437,7 @@ textarea.textarea {
 .survey-page-button{
     background-color: #00bf6f;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
     float: none !important;
     border: 1px solid transparent;
@@ -477,7 +482,7 @@ form{
 
 
 p {
-    font-family: Lato;
+  font-family: 'Lato', sans-serif;
   }
   
   .header{
@@ -679,8 +684,8 @@ ul.arrow{
 }
 
 ul.arrow li::before {
-  content:'\f105';
-  font-family: FontAwesome;
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
   font-size: 11px;
   margin-right: 5px;
 }
@@ -726,42 +731,148 @@ small, .small {
 
 
 
+/*navbar*/
+
+.navbar{
+  height: 70px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 199;
+  backface-visibility: hidden;
+}
+
+
+#navbarNav{
+  margin-left: 430px;
+}
+
+
+#logo {
+  border-right-color: rgba(0,0,0,0.1);
+  opacity: 1;
+  padding-right: 30px;
+  border-right: 2px solid #EEE;
+  position: relative;
+  float: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  line-height: 100%;
+  margin-right: 40px;
+  -webkit-transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
+  -o-transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
+  transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
+
+}
+
+#icon{
+  border-right-color: rgba(0,0,0,0.1);
+  opacity: 1;
+  padding-left: 25px;
+  border-left: 2px solid #EEE;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+i.fas{
+  color: black;
+  padding: 0 20px 0 0;
+  margin-top: 20px;
+}
+
+i.fas:hover{
+  color: $green10;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+
+#navbarNav ul li > a {
+  display: block;
+  line-height: 20px;
+  padding: 25px;
+  color: #444;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  -webkit-transition: margin .4s ease, padding .4s ease;
+  -o-transition: margin .4s ease, padding .4s ease;
+  transition: margin .4s ease, padding .4s ease;
+}
+
+
+#navbarNav ul li > a:hover{
+  color: $green10;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.navbar-content{
+  background-color: #fff;
+  color: #444;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  z-index: 199;
+  backface-visibility: hidden;
+}
+
+.navbar-collapse{
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 @media (min-width: 1200px){
 .container {
     width: 100%;
-}
-}
-
-@media (min-width: 1200px){
-.container {
     max-width: 1170px;
 }
 }
 
-@media (min-width: 992px){
-.col-md-4 {
+
+@media (min-width: 700px){
+  .col-md-4 {
     width: 33.33333333% !important;
     float: left;
 }
+  .col-md-3 {
+    width: 25% !important;
 }
-
-@media (min-width: 992px){
 .col-md-2 {
     width: 16.66666667% !important;
     float: left;
 }
 }
 
-@media (min-width: 992px){
-.col-md-3 {
-    width: 25% !important;
-}
-}
 
-@media (min-width: 768px){
+@media (min-width: 700px){
 .col-sm-5 {
     width: 41.66666667% !important;
 }
@@ -769,16 +880,6 @@ small, .small {
   width: 41.66666667% !important;
 }
 }
-
-@media all and (max-width: 700px){
-  .social-media{
-    width: 100% !important;
-  }
-  .company-name{
-    width: 100% !important;
-  }
-}
-
 
 
 @media all and (max-width: 700px){
@@ -794,6 +895,15 @@ small, .small {
 }
 
 @media all and (max-width: 700px){
+  #icon{
+    display: none;
+  }
+  .social-media{
+    width: 100% !important;
+  }
+  .company-name{
+    width: 100% !important;
+  }
     .main{
         padding: 10px;
         margin: 10px 0 0;
