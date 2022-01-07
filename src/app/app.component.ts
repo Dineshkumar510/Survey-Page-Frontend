@@ -13,6 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 export class AppComponent implements OnInit  {
   @ViewChild("toTopBtn") private toTopBtn: any;
 
+  
   box: any;
   name = "Angular";
   progressValue = 0;
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit  {
   title = 'feedback';
   className: string | undefined;
   window: any;
+  activeButton: any
 
   constructor(public toastService: ToastService,
     private toastr: ToastrService,
@@ -29,23 +31,13 @@ export class AppComponent implements OnInit  {
 
   ngOnInit(): void {
 
-  
-    var header = document.getElementById("chart")!;
-    var btns = header.getElementsByClassName("btn");
-    for (var i = 0; i<btns.length; i++){
-      btns[i].addEventListener('click', () => {
-        var current = document.getElementsByClassName("active");
-        if (current.length > 0){
-          current[0].className = current[0].className.replace("active", "");
-        }
-        this.className += " active";
-      });
-    }
-
-
   }
 
   
+  showPhase(event: any){
+    this.activeButton = event;
+  }
+
 
   showSuccess() {
     this.toastr.success('Your Feedback submitted successfully 🤗');
