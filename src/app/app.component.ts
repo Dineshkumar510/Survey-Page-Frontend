@@ -1,6 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { fadeInOut } from "./animations/animation";
-
 import { ToastService } from './app-service';
 import { ToastrService } from 'ngx-toastr';
 @Component({
@@ -11,16 +10,8 @@ import { ToastrService } from 'ngx-toastr';
   
 })
 export class AppComponent implements OnInit  {
-  @ViewChild("toTopBtn") private toTopBtn: any;
-
-  
-  box: any;
-  name = "Angular";
   progressValue = 0;
-  isShow:boolean = true;
   title = 'feedback';
-  className: string | undefined;
-  window: any;
   activeButton: any
 
   constructor(public toastService: ToastService,
@@ -29,24 +20,24 @@ export class AppComponent implements OnInit  {
   {}
 
 
-  ngOnInit(): void {
+    ngOnInit(): void {
 
-  }
+    }
 
   
-  showPhase(event: any){
-    this.activeButton = event;
-  }
+    showPhase(event: any){
+      this.activeButton = event;
+    }
 
 
-  showSuccess() {
-    this.toastr.success('Your Feedback submitted successfully 🤗');
-  }
+    showSuccess() {
+      this.toastr.success('Your Feedback submitted successfully 🤗');
+    }
 
 
-  getProgressValue(v : any) {
-    this.progressValue = v;
-  }
+    getProgressValue(v : any) {
+      this.progressValue = v;
+    }
 
   
   
